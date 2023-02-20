@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 
-body{
+.latar{
     margin: 0;
     padding: 0;
     font-family: sans-serif, 'Lora';
     background: url(img/background.jpg);
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
+    height: 500px;
 }
 
 /* Navbar Start */
@@ -13,11 +14,11 @@ body{
 header{
     position: relative;
     max-width: 1200px;
-    margin: 20px auto;
+    margin: 0 auto;
     padding: 10px;
     box-sizing: border-box;
     background: #FBCFE8;
-    border-radius: 5px;
+    border-radius: 5px 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0,.2);
 }
 
@@ -100,10 +101,52 @@ section img{
 
 /* End Section Hero */
 
+/* Start Tentang */
+
+.tentang{
+    padding: 20px;
+}
+
+.tentang h2{
+    text-align: center;
+    color: #9D174D;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.tentang p{
+    text-align: center;
+    color: #0f172a;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social a{
+    font-size: 50px;
+    margin: 10px;
+}
+
+.social a i{
+    line-height: 40px;
+    color: #9D174D;
+}
+
+/* End Tentang */
+
 /* Responsive Start */
 
 @media (max-width:1200px){
     /* Navbar Start */
+
+    .latar{
+        height: 950px;
+    }
 
     header{
         margin: 20px;
