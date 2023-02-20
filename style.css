@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif, 'Lora';
+    background: url(img/background.jpg);
+    background-attachment: fixed;
+}
+
+/* Navbar Start */
+
+header{
+    position: relative;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+    box-sizing: border-box;
+    background: #FBCFE8;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0,.2);
+}
+
+.logo{
+    color: #9D174D;
+    height: 60px;
+    font-size: 30px;
+    line-height: 60px;
+    padding: 0 20px;
+    /* background: #F9A8D4; */
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+nav{
+    float: right;
+}
+
+.clearfix{
+    clear: both;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    color: #0f172a;
+}
+
+nav ul li a.active,
+nav ul li a:hover{
+    background: #e2e8f0;
+    color: #9D174D;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+/* End Navbar */
+
+/* Section Hero Start */
+
+section{
+    position: relative;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    background: #f472b6;
+    border-radius: 5px;
+}
+
+.content h2{
+    color: #fff;
+    font-size: 45px;
+}
+
+.content p{
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+section img{
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* End Section Hero */
+
+/* Responsive Start */
+
+@media (max-width:1200px){
+    /* Navbar Start */
+
+    header{
+        margin: 20px;
+    }
+
+    /* End Navbar */
+
+    /* Section Hero Start */
+
+    section{
+        margin: 20px;
+    }
+
+    /* End Section Hero */
+}
+
+@media (max-width: 768px){
+
+    /* Navbar Start */
+
+    .hamburger-menu{
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+        background: #e2e8f0;
+        float: right;
+        cursor: pointer;
+        text-align: center;
+        font-size: 30px;
+        color: #9D174D;
+        
+    }
+
+    .hamburger-menu:before{
+        content: '\f0c9';
+        font-family: fontAwesome;
+        line-height: 40px;
+    }
+
+    .hamburger-menu.active:before{
+        content: '\f00d';
+    }
+
+    nav{
+        display: none;
+    }
+
+    nav.active{
+        display: block;
+        width: 100%;
+    }
+
+    nav.active ul{
+        display: block;
+    }
+
+    nav.active li a{
+        margin: 0;
+    }
+
+    /* End Navbar */
+
+    /* Start Hero Section */
+
+    section{
+        display: block;
+    }
+
+    /* Hero Section End */
+}
+
+/* End Responsive */
